@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amber Design</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Подключаем Font Awesome -->
+<style>
+    body {
+        position: relative; /* Для позиционирования псевдоэлемента */
+        font-family: Arial, sans-serif; /* Шрифт */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    body::before {
+        content: ""; /* Создаем псевдоэлемент */
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('https://img2.akspic.ru/crops/5/3/8/6/7/176835/176835-nacionalnyj_park_grand_kanon-bolshoj_kanon-tochka_navaho-mazer_pojnt-nacionalnyj_park_zajon-2560x1440.jpg'); /* Фоновое изображение */
+        background-size: cover; /* Масштабируем изображение на весь экран */
+        background-position: center; /* Выравниваем изображение по центру */
+        filter: opacity(11); /* Размываем фон */
+    }
+
+    .container {
+        z-index: 1; /* Устанавливаем контейнер над псевдоэлементом */
+        text-align: center; /* Центрируем содержимое по горизонтали */
+    }
+
+    .button {
+        background-color: #3f51b5; /* Изменен цвет кнопок на глубокий синий */
+        color: #fff;
+        border: none;
+        padding: 15px 45px; /* Увеличенный размер кнопок */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 22px; /* Увеличенный размер текста на кнопках */
+        margin: 10px;
+        cursor: pointer;
+        border-radius: 25px; /* Чуть-чуть округляем углы кнопок */
+        overflow: hidden;
+        transition: background-color 0.3s; /* Плавный переход для цвета кнопок */
+        transform: scale(1.1); /* Увеличиваем размер кнопок */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Тень для кнопок */
+    }
+
+    .button:hover {
+        background-color: #1e88e5; /* Изменяем цвет кнопки при наведении */
+    }
+
+    img#amberavatar {
+        border-radius: 50%; /* Закругляем края изображения */
+        margin-top: -60px; /* Поднимаем изображение чуть выше */
+        transition: transform 0.3s, box-shadow 0.3s; /* Переход для transform и box-shadow */
+        transform: scale(0.95); /* Уменьшаем размер изображения */
+    }
+
+    img#amberavatar:hover {
+        transform: scale(1); /* Увеличиваем изображение при наведении */
+        box-shadow: 0 0 20px rgba(25, 0, 255, 0.5); /* Тень при наведении */
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <img src="img/amberavatar.png" id="amberavatar" width="300" height="300" style="margin-top: -10px;"> <!-- Слегка уменьшенные размеры изображения -->
+    <br>
+    <a href="https://t.me/amberdesigns" target="_blank" class="button"><i class="fab fa-telegram"></i> Telegram</a>
+    <a href="https://www.instagram.com/amber_designn?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="button"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://youtube.com/@This_Amber?si=lUTWSLYx-_CbJxi7" target="_blank" class="button"><i class="fab fa-youtube"></i> YouTube</a>
+</div>
+
+</body>
+</html>
